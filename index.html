@@ -71,6 +71,13 @@
             }
         });
     </script>
+    <script>
+    document.body.addEventListener('touchmove',function(e){
+     if(!$(e.target).hasClass("ifrm")) {
+       e.preventDefault();
+     }
+ });
+    </script>
 
 </body>
 
